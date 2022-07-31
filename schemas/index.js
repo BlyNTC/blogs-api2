@@ -1,11 +1,11 @@
-const user = require('./userSchemas');
+const users = require('./userSchemas');
 const login = require('./loginSchemas');
-const post = require('./postSchemas');
-const categorie = require('./categorieSchemas');
+const posts = require('./postSchemas');
+const categories = require('./categorieSchemas');
 
 module.exports = {
-  user,
+  users,
   login,
-  post,
-  categorie,
+  posts,
+  categories,
 };
