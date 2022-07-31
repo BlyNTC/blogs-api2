@@ -6,6 +6,11 @@ const get = async () => {
   return dataUsers;
 };
 
+const getById = async (id) => {
+  const dataUser = await Users.findByPk(id);
+  return dataUser;
+};
+
 const create = async (body) => {
   const userToBeCreated = await Users.findOne({ where: { email: body.email } });
   if (userToBeCreated) {
@@ -27,4 +32,5 @@ module.exports = {
   get,
   create,
   login,
+  getById,
 };

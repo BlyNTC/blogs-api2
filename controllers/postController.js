@@ -9,7 +9,7 @@ const get = rescue(async (req, res) => {
 });
 
 const create = rescue(async (req, res) => {
-  utils.validateJoi(schemas.post, req.body);
+  utils.validateJoi(schemas.posts, req.body);
   const data = await services.posts.create(req.body, req.headers.authorization);
   res.status(200).json(data);
 });
