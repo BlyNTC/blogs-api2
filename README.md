@@ -68,6 +68,8 @@ $ cd blogs-api
 $ npm install
 
 # Run the project
+$ npm run prestart
+$ npm run seed
 $ npm start
 
 # The server will initialize in the <http://localhost:3000>
