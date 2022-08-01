@@ -15,7 +15,7 @@ const getById = rescue(async (req, res) => {
 
 const create = rescue(async (req, res) => {
   utils.validateJoi(schemas.users, req.body);
-  const data = await services.user.create(req.body);
+  const data = await services.users.create(req.body);
   res.status(200).json({ message: data });
 });
 
