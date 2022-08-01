@@ -53,7 +53,7 @@ The following tools were used in this project:
 
 ## :white_check_mark: Requirements ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [Node](https://nodejs.org/en/) and [MySQL](https://www.mysql.com/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [Node](https://nodejs.org/en/) and [MySQL](https://www.mysql.com/) installed. In this project I'm using sequelize as ORM, sequelize's "config" is using "dotenv", so you'll need 4 environment variables: MYSQL_USER, MYSQL_PASSWORD, HOSTNAME and JWT_SECRET. Remembering that the variables MYSQL_USER and MYSQL_PASSWORD are from mysql-server running on your machine.
 
 ## :checkered_flag: Starting ##
 
@@ -68,6 +68,8 @@ $ cd blogs-api
 $ npm install
 
 # Run the project
+$ npm run prestart
+$ npm run seed
 $ npm start
 
 # The server will initialize in the <http://localhost:3000>
